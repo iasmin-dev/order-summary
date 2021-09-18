@@ -7,12 +7,46 @@
 /* ==== VARIABLES ==== */
 :root {
   --background-color: hsl(224, 100%, 92%);
-  --white: #ffffff;
+  --very-pale-blue: hsl(225, 100%, 98%);
+  --desaturated-blue: hsl(224, 23%, 55%);
+  --dark-blue: hsl(223, 47%, 23%);
+  --pale-blue: hsl(225, 100%, 94%);
+  --bright-blue: hsl(245, 75%, 52%);
 }
 
 /* ==== STYLE ====  */
 body {
-  background-color: var(--background-color);
+  background-image: url("images/pattern-background-mobile.svg");
+  background-repeat: no-repeat;
+}
+
+.title {
+  font: 900 1.4rem "Red Hat Display", sans-serif;
+  color: var(--dark-blue);
+}
+
+.text {
+  font: 500 1rem "Red Hat Display", sans-serif;
+  color: var(--desaturated-blue);
+}
+
+#annual {
+  font: 900 1rem "Red Hat Display", sans-serif;
+}
+
+#link {
+  font: 700 1rem "Red Hat Display", sans-serif;
+  text-decoration: underline;
+}
+#proceed {
+  background-color: var(--bright-blue);
+  font: 700 1rem "Red Hat Display", sans-serif;
+  color: var(--very-pale-blue);
+}
+
+#cancel {
+  font: 700 1rem "Red Hat Display", sans-serif;
+  color: var(--desaturated-blue);
 }
 
 .image img {
@@ -25,6 +59,21 @@ body {
   width: 21.5625rem;
   border-radius: 1.25rem;
   margin: 3rem 1.25rem;
+  text-align: center;
+}
+
+/* ==== FLEX ==== */
+.flex {
+  display: flex;
+  justify-content: space-between;
+}
+/* ==== WRAP ==== */
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+.plan {
+  background-color: var(--very-pale-blue);
 }
 
 .attribution {
