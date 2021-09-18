@@ -10,7 +10,11 @@
 
   <!--  ==== STYLE ==== -->
   <link rel="stylesheet" href="style.css">
-
+  
+  <!-- ==== FONTS ==== -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap" rel="stylesheet">
 </head>
 <body>
   <main>
@@ -18,23 +22,27 @@
         <div class="image">
           <img src="/images/illustration-hero.svg" alt="a person enjoying listening to music">
         </div>
-        <div class="title">
-          <p>Order Summary</p>
-        </div>
-        <div class="text">
-          <p>You can now listen to millions of songs, audiobooks, and podcasts on any device anywhere you like!</p>
-        </div>
-        <div class="plan">
-          <p>Annual Plan</p>
-          <p>$59.99/year</p>
-          <a href="#">Change</a>   
-        </div>
-        <div class="button-1">
-          <p>Proceed to Payment</p>
-        </div>
-        <div class="cancel">
-          <p>Cancel Order</p>   
-        </div>
+        
+        <section>
+            <div class="title"><p>Order Summary</p></div>
+            <div class="text"><p>You can now listen to millions of songs, audiobooks, and podcasts on any device anywhere you like!</p></div>
+        </section>
+        
+        <section>
+          <div class="plan flex">
+            <div><img src="/images/icon-music.svg" alt="one musical note symbol"></div>
+            <div class="flex-wrap">
+              <div id="annual"><p>Annual Plan</p></div>
+              <div class="text"><p>$59.99/year</p></div>
+            </div>
+            <div id="link"><a href="#">Change</a></div>   
+          </div>
+        </section>
+        
+        <section>
+          <div id="proceed"><p>Proceed to Payment</p></div>
+          <div id="cancel"><p>Cancel Order</p></div>
+        </section>
     </div>
   </main>
    
