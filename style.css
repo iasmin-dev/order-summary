@@ -21,7 +21,7 @@ body {
 }
 
 .title {
-  font: 900 1.4rem "Red Hat Display", sans-serif;
+  font: 900 1rem "Red Hat Display", sans-serif;
   color: var(--dark-blue);
 }
 
@@ -40,8 +40,12 @@ body {
 }
 #proceed {
   background-color: var(--bright-blue);
+  width: 16.4rem;
+  height: 3.4rem;
+  border-radius: 0.9rem;
   font: 700 1rem "Red Hat Display", sans-serif;
   color: var(--very-pale-blue);
+  justify-content: center;
 }
 
 #cancel {
@@ -56,7 +60,8 @@ body {
 
 .container {
   background-color: var(--white);
-  width: 21.5625rem;
+  width: 23.4rem;
+  height: auto;
   border-radius: 1.25rem;
   margin: 3rem 1.25rem;
   text-align: center;
@@ -74,6 +79,11 @@ body {
 
 .plan {
   background-color: var(--very-pale-blue);
+  width: 16.4rem;
+  height: 5.3rem;
+  border-radius: 0.9rem;
+  padding: 0 15px;
+  align-items: center;
 }
 
 .attribution {
