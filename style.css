@@ -16,18 +16,32 @@
 
 /* ==== STYLE ====  */
 body {
-  background-image: url("images/pattern-background-mobile.svg");
+  background-size: 100% auto;
+  background-color: var(--pale-blue);
+  background-image: url("images/pattern-background-desktop.svg");
   background-repeat: no-repeat;
+}
+
+@media (max-width: 500px) {
+  body {
+    background-color: var(--pale-blue);
+    background-size: 100% auto;
+    background-image: url("images/pattern-background-mobile.svg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
 }
 
 .title {
   font: 900 1rem "Red Hat Display", sans-serif;
   color: var(--dark-blue);
+  margin: 1.8rem;
 }
 
 .text {
   font: 500 1rem "Red Hat Display", sans-serif;
   color: var(--desaturated-blue);
+  margin-top: 1.8rem;
 }
 
 #annual {
@@ -38,14 +52,22 @@ body {
   font: 700 1rem "Red Hat Display", sans-serif;
   text-decoration: underline;
 }
-#proceed {
+
+.proceed {
   background-color: var(--bright-blue);
-  width: 16.4rem;
-  height: 3.4rem;
+  max-width: 16.4rem;
   border-radius: 0.9rem;
   font: 700 1rem "Red Hat Display", sans-serif;
   color: var(--very-pale-blue);
-  justify-content: center;
+  margin: 0 auto;
+  padding: 1.25rem;
+  margin-bottom: 1.8rem;
+  box-shadow: -1px 10px 8px 2px hsl(245, 75%, 89%);
+}
+
+.proceed p {
+  text-align: center;
+  align-content: center;
 }
 
 #cancel {
@@ -54,17 +76,27 @@ body {
 }
 
 .image img {
-  width: 21.5625rem;
-  border-radius: 1.5rem;
+  max-width: 23.4rem;
+  border-top-left-radius: 0.9rem;
+  border-top-right-radius: 0.9rem;
+}
+
+.text {
+  max-width: 21.5rem;
 }
 
 .container {
   background-color: var(--white);
-  width: 23.4rem;
+  max-width: 23.4rem;
   height: auto;
-  border-radius: 1.25rem;
-  margin: 3rem 1.25rem;
+  margin: 0 auto;
   text-align: center;
+  margin-top: 2.5rem;
+  border-top-left-radius: 0.9rem;
+  border-top-right-radius: 0.9rem;
+  border-bottom-left-radius: 0.9rem;
+  border-bottom-right-radius: 0.9rem;
+  background-color: white;
 }
 
 /* ==== FLEX ==== */
@@ -76,19 +108,45 @@ body {
 .flex-wrap {
   flex-wrap: wrap;
 }
+/* ==== JUSTIFY-CONTENT ==== */
 
 .plan {
   background-color: var(--very-pale-blue);
   width: 16.4rem;
-  height: 5.3rem;
+  padding: 20px 15px;
   border-radius: 0.9rem;
-  padding: 0 15px;
   align-items: center;
+  margin: 0 auto;
+  margin-bottom: 1.8rem;
+}
+
+.plan ul li {
+  list-style: none;
+  justify-content: left;
+  display: left;
+  margin-right: 15px;
+}
+
+.annual-plan {
+  font: 900 1rem "Red Hat Display", sans-serif;
+  color: var(--dark-blue);
+}
+
+.price {
+  font: 500 1rem "Red Hat Display", sans-serif;
+  color: var(--desaturated-blue);
+}
+
+#cancel {
+  margin-top: 2.5rem;
+  padding-bottom: 40px;
 }
 
 .attribution {
+  margin-top: 2.5rem;
   font-size: 11px;
   text-align: center;
+  font: 500 1rem "Red Hat Display", sans-serif;
 }
 
 .attribution a {
