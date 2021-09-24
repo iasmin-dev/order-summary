@@ -18,7 +18,7 @@
 body {
   background-size: 100% auto;
   background-color: var(--pale-blue);
-  background-image: url("images/pattern-background-desktop.svg");
+  background-image: url('images/pattern-background-desktop.svg');
   background-repeat: no-repeat;
 }
 
@@ -26,30 +26,30 @@ body {
   body {
     background-color: var(--pale-blue);
     background-size: 100% auto;
-    background-image: url("images/pattern-background-mobile.svg");
+    background-image: url('images/pattern-background-mobile.svg');
     background-repeat: no-repeat;
     background-attachment: fixed;
   }
 }
 
 .title {
-  font: 900 1rem "Red Hat Display", sans-serif;
+  font: 900 1rem 'Red Hat Display', sans-serif;
   color: var(--dark-blue);
   margin: 1.8rem;
 }
 
 .text {
-  font: 500 1rem "Red Hat Display", sans-serif;
+  font: 500 1rem 'Red Hat Display', sans-serif;
   color: var(--desaturated-blue);
   margin-top: 1.8rem;
 }
 
 #annual {
-  font: 900 1rem "Red Hat Display", sans-serif;
+  font: 900 1rem 'Red Hat Display', sans-serif;
 }
 
 #link {
-  font: 700 1rem "Red Hat Display", sans-serif;
+  font: 700 1rem 'Red Hat Display', sans-serif;
   text-decoration: underline;
 }
 
@@ -57,7 +57,7 @@ body {
   background-color: var(--bright-blue);
   max-width: 16.4rem;
   border-radius: 0.9rem;
-  font: 700 1rem "Red Hat Display", sans-serif;
+  font: 700 1rem 'Red Hat Display', sans-serif;
   color: var(--very-pale-blue);
   margin: 0 auto;
   padding: 1.25rem;
@@ -71,7 +71,7 @@ body {
 }
 
 #cancel {
-  font: 700 1rem "Red Hat Display", sans-serif;
+  font: 700 1rem 'Red Hat Display', sans-serif;
   color: var(--desaturated-blue);
 }
 
@@ -128,12 +128,12 @@ body {
 }
 
 .annual-plan {
-  font: 900 1rem "Red Hat Display", sans-serif;
+  font: 900 1rem 'Red Hat Display', sans-serif;
   color: var(--dark-blue);
 }
 
 .price {
-  font: 500 1rem "Red Hat Display", sans-serif;
+  font: 500 1rem 'Red Hat Display', sans-serif;
   color: var(--desaturated-blue);
 }
 
@@ -146,7 +146,7 @@ body {
   margin-top: 2.5rem;
   font-size: 11px;
   text-align: center;
-  font: 500 1rem "Red Hat Display", sans-serif;
+  font: 500 1rem 'Red Hat Display', sans-serif;
 }
 
 .attribution a {
